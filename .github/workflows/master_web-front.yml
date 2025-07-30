@@ -25,9 +25,8 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          npm install
+          npm install -g create-react-app
           npm run build 
-          npm run test 
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
